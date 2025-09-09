@@ -1,0 +1,42 @@
+@import '../../shared/style/variables.scss';
+
+.playlist {
+	width: 279px;
+	height: 284px;
+	border-radius: 30px;
+	position: relative;
+
+	.photoAlbum {
+		.photo {
+			width: 279px;
+			height: 284px;
+			border-radius: 30px;
+		}
+	}
+
+	.dataWrapper {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+		margin: 0px 20px 20px;
+
+		font-family: $--font-family;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 140%;
+
+		.dataValue {
+			color: $--main-white-000;
+		}
+	}
+
+	.likeWrapper {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+}

@@ -1,0 +1,74 @@
+.contentTopRight {
+	border-radius: 40px;
+	width: 40%;
+	overflow: hidden;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.mainImage {
+		border-radius: 40px;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.blockText {
+		position: absolute;
+		bottom: 30px;
+		left: 24px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+
+		.textSmall {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 140%;
+			color: #fff;
+		}
+		.textBig {
+			font-family: var(--font-family);
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 131%;
+			text-align: center;
+			color: #fff;
+		}
+	}
+
+	.calendar {
+		border-radius: 20px;
+		width: 77px;
+		height: 95px;
+		background: #fff;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		top: 30px;
+		right: 24px;
+
+		.month {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 140%;
+			color: #000;
+		}
+		.date {
+			font-family: var(--font-family);
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 131%;
+			text-align: center;
+			color: #000;
+		}
+	}
+}

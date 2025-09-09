@@ -1,0 +1,135 @@
+@import '../../../style/variables.scss';
+
+%baseButtonStyle {
+	width: 148px;
+	height: 36px;
+	cursor: pointer;
+	border-radius: 8px;
+	color: $--main-000;
+	padding: 6px 12px 6px 12px;
+	font: 500 18px $--open-sans-font;
+}
+
+.buttonContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonPrimary {
+	@extend %baseButtonStyle;
+	background: $--main-accent-700;
+	box-shadow: 0px 2px 6px 0px rgba(9, 222, 161, 0.25);
+	&:hover {
+		box-shadow: 0px 4px 12px 0px rgba(9, 222, 161, 0.35);
+		background: $--main-accent-600;
+	}
+	&:active {
+		background: $--main-accent-800;
+	}
+	&:disabled {
+		background-color: $--main-accent-100;
+		color: $--main-200;
+	}
+}
+
+.buttonSecondary {
+	@extend %baseButtonStyle;
+	background-color: $--main-800;
+
+	&:hover {
+		border: $--main-accent-900;
+		background: $--main-accent-950;
+	}
+
+	&:active {
+		background: $--main-accent-800;
+	}
+
+	&:disabled {
+		border: $--main-500;
+		background: $--main-700;
+		color: $--main-400;
+	}
+}
+
+.buttonText {
+	width: 124px;
+	height: 36px;
+	padding: 6px 0px 6px 0px;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	color: $--main-000;
+	background: none;
+	font: 500 18px $--open-sans-font;
+
+	&:hover {
+		border-bottom: 2px solid $--main-accent-600;
+		color: $--main-accent-600;
+	}
+
+	&:active {
+		border-bottom: 2px solid $--main-accent-900;
+		color: $--main-accent-900;
+	}
+
+	&:disabled {
+		color: $--main-500;
+	}
+}
+.buttonBlackWhite {
+	border: 2px solid $--main-white-000;
+	background: $--main-black-1000;
+	border-radius: 31px;
+	padding: 10px 20px;
+	text-decoration: none;
+	cursor: pointer;
+
+	font-family: $--font-family;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+	color: $--main-white-000;
+
+	&:hover {
+		background: $--main-white-000;
+		color: $--main-black-1000;
+	}
+
+	&:active {
+		background: $--main-white-000;
+		color: $--main-black-1000;
+	}
+
+	&:disabled {
+		background: $--main-500;
+		color: $--main-500;
+	}
+}
+
+.buttonInverse {
+	@extend %baseButtonStyle;
+	background-color: #8caaff;
+
+	&:hover {
+		box-shadow: 0px 0px 6px 0px rgba(132, 129, 255, 0.5);
+	}
+
+	&:active {
+		background-color: rgb(166, 166, 166);
+	}
+
+	&:disabled {
+		background-color: rgb(217, 217, 217);
+		color: rgb(166, 166, 166);
+		box-shadow: none;
+	}
+}
+
+.icon {
+	background-color: transparent;
+	width: 24px;
+	height: 24px;
+}

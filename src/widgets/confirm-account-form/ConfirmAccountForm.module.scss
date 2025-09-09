@@ -1,0 +1,18 @@
+@import '../../shared/style/variables.scss';
+
+.confirmText {
+	font-family: $--font-family;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 110%;
+	color: $--main-white-000;
+	margin-bottom: 46px;
+
+	.tempEmail {
+		color: $--main-accent-700;
+	}
+}
+
+.btnWrapper {
+	margin-top: 44px;
+}

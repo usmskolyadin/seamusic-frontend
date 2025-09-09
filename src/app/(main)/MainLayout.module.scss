@@ -1,0 +1,36 @@
+.main {
+	margin: 0 auto;
+	max-width: 1820px;
+	padding: 156px 0px 160px;
+
+	.content {
+		padding-left: 308px;
+		width: 100%;
+		display: flex;
+
+		.mainContent {
+			width: 100%;
+
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.main {
+		padding: 100px 20px 200px;
+		box-sizing: border-box;
+		max-width: 100%; 
+
+		.content {
+			padding-left: 0; 
+			width: 100%; 
+		}
+
+		.mainContent {
+			width: 100%;
+		}
+	}
+}

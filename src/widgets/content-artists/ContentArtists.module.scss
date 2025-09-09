@@ -1,0 +1,16 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	.contentMain {
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
+
+		.contentItems {
+			display: flex;
+			gap: 50px;
+		}
+	}
+}

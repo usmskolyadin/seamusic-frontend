@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Benzin';
+  src: url('./Benzin/Benzin-Regular.woff2') format('woff2'),
+       url('./Benzin/Benzin-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('./Benzin/Benzin-Medium.woff2') format('woff2'),
+       url('./Benzin/Benzin-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('./Benzin/Benzin-Bold.woff2') format('woff2'),
+       url('./Benzin/Benzin-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src:
+		local('Montserrat'),
+		url('./Montserrat/Montserrat-Regular.woff2') format('woff2'),
+		url('./Montserrat/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local('Montserrat'),
+		url('./Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+		url('./Montserrat/Montserrat-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src:
+		local('Montserrat'),
+		url('./Montserrat/Montserrat-Bold.woff2') format('woff2'),
+		url('./Montserrat/Montserrat-Bold.woff') format('woff');
+}

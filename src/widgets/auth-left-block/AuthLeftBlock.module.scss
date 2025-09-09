@@ -1,0 +1,51 @@
+@import '../../shared/style/variables.scss';
+
+.block {
+	width: 468px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+
+	.top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.imgTopLeft {
+			width: 204px;
+		}
+		.imgTopRight {
+			width: 204px;
+			height: 204px;
+		}
+	}
+
+	.center {
+		border-radius: 100px;
+		max-height: 204px;
+		backdrop-filter: blur(4px);
+		background: rgba(132, 132, 132, 0.3);
+
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 131%;
+		text-align: center;
+		color: #fff;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 59px 96px;
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: space-between;
+
+		.bottomLeft {
+			display: flex;
+			flex-direction: column;
+			gap: 53px;
+		}
+	}
+}

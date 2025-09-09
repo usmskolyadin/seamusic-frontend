@@ -1,0 +1,25 @@
+.navItem {
+	border-radius: 50px;
+	height: 52px;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	&:hover {
+		background: #5d5d5d;
+		.navItemText {
+			color: #fff;
+		}
+	}
+
+	.navItemText {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 140%;
+		color: #9D9D9D;
+		
+		text-decoration: none;
+	}
+}

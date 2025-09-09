@@ -1,0 +1,13 @@
+@import '../../style/variables.scss';
+
+.circleLike {
+	border-radius: 900px;
+	width: 51px;
+	height: 51px;
+	background: $--main-black-850;
+	opacity: 0.8;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

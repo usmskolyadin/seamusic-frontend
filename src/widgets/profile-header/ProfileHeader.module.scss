@@ -1,0 +1,129 @@
+@import '../../shared/style/variables.scss';
+
+.profileHeader {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	.header {
+		width: 100%;
+		height: 380px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		position: relative;
+
+		.headerTop {
+			border-radius: 40px;
+			height: 290px;
+			background-color: #ffffff;
+		}
+		.headerBottom {
+			margin-left: 285px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.profileBtns,
+			.profileInfo {
+				display: flex;
+				gap: 20px;
+			}
+			.profileInfoItem {
+				font-family: $--font-family;
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 140%;
+				color: $--main-white-000;
+			}
+		}
+		.headerAvatar {
+			position: absolute;
+			bottom: 0px;
+			left: 30px;
+
+			border: 5px solid $--main-black-1000;
+			border-radius: 200px;
+			width: 235px;
+			height: 235px;
+			background-color: #ffffff;
+		}
+	}
+	.footer {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.userInfo {
+			width: 895px;
+			height: 227px;
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+
+			.infoTitle {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+
+				.name {
+					font-family: $--font-family;
+					font-weight: 600;
+					font-size: 32px;
+					line-height: 131%;
+					color: $--main-white-000;
+				}
+				.login {
+					font-family: $--font-family;
+					font-weight: 400;
+					font-size: 32px;
+					line-height: 131%;
+					color: #525252;
+				}
+			}
+			.infoContent {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				.contentDescription {
+					font-family: $--font-family;
+					font-weight: 400;
+					font-size: 22px;
+					line-height: 127%;
+					color: $--main-white-000;
+				}
+				.contentBtns {
+					display: flex;
+					gap: 10px;
+				}
+			}
+		}
+		.userBanner {
+			width: 480px;
+			height: 226px;
+			border-radius: 40px;
+			background-color: $--main-600;
+		}
+	}
+	.navigation {
+		width: 100%;
+		height: 42px;
+		display: flex;
+		gap: 65px;
+
+		.navigationLink {
+			font-family: $--font-family;
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 131%;
+			color: #525252;
+			cursor: pointer;
+
+			&:hover {
+				color: $--main-white-000;
+			}
+		}
+	}
+}

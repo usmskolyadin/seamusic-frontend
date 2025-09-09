@@ -1,0 +1,22 @@
+@import url('../shared/style/normalize.css');
+@import url('../shared/assets/fonts/fonts.css');
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Benzin";
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	background: #0F0F0F;
+	padding: 0 16px;
+	overflow-x: hidden;
+}

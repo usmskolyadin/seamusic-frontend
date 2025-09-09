@@ -1,0 +1,105 @@
+@import '../../style/variables.scss';
+
+.checkbox {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	cursor: pointer;
+
+	.checkboxInput {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: 24px;
+		height: 24px;
+		background-color: $--main-000;
+		border: 1px solid $--main-000;
+		border-radius: 5px;
+		outline: none;
+		position: relative;
+		transition:
+			border-color 0.2s ease-in-out,
+			background-color 0.2s ease-in-out;
+		cursor: pointer;
+
+		&:disabled {
+			background-color: $--main-000;
+			border-color: $--main-000;
+			cursor: not-allowed;
+
+			&:hover {
+				background-color: $--main-000;
+				border-color: $--main-000;
+			}
+
+			&:checked {
+				background-color: $--main-400;
+				border-color: $--main-400;
+			}
+		}
+
+		&:hover {
+			background-color: $--main-accent-800;
+			border-color: $--main-accent-800;
+		}
+
+		&:checked {
+			background-color: $--main-accent-600;
+			border-color: $--main-accent-600;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 12px;
+				height: 6px;
+				border: solid $--main-000;
+				border-width: 0 0 2px 2px;
+				transform: translate(-50%, -50%) rotate(-45deg);
+			}
+		}
+
+		&:active {
+			background-color: $--main-000;
+			border: 2px solid $--attention-yellow-300;
+		}
+	}
+
+	.checkboxInput.round {
+		border-radius: 900px;
+	}
+
+	.checkboxInput.empty {
+		background-color: transparent;
+
+		&:disabled {
+			background-color: transparent;
+
+			&:hover {
+				background-color: transparent;
+				border-color: $--main-000;
+			}
+
+			&:checked {
+				background-color: transparent;
+				border-color: $--main-400;
+			}
+		}
+
+		&:hover {
+			background-color: $--main-accent-800;
+			border-color: $--main-000;
+		}
+
+		&:checked {
+			background-color: $--main-accent-600;
+			border-color: $--main-000;
+		}
+
+		&:active {
+			background-color: transparent;
+			border: 2px solid $--attention-yellow-300;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+@import '../../shared/style/variables.scss';
+
+.preferWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+
+	margin-bottom: 50px;
+
+	.preferTitle {
+		font-family: $--font-family;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 133%;
+		color: #fff;
+	}
+	.prefer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}

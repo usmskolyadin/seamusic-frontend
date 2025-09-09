@@ -1,0 +1,26 @@
+@import '../../../../shared/style/variables.scss';
+
+.btnLink {
+	text-decoration: none;
+
+	.btnGradient {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border-radius: 40px;
+		width: 328px;
+		height: 64px;
+		background: linear-gradient(219deg, #0a946d 0%, #19385c 100%);
+
+		border: none;
+		cursor: pointer;
+
+		.btnText {
+			font-family: $--font-family;
+			font-weight: 400;
+			font-size: 24px;
+			color: #fff;
+		}
+	}
+}

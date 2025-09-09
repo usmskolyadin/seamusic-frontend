@@ -1,0 +1,31 @@
+@import '../../shared/style/variables.scss';
+
+.loginBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.signUpLine {
+	margin-top: 8px;
+	display: flex;
+	justify-content: flex-start;
+	gap: 8px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 133%;
+	color: #fff;
+}
+
+.linkUnderline {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 133%;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: $--main-white-000;
+}
+
+.btnWrapper {
+	margin-top: 16px;
+}

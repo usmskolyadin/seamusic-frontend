@@ -1,0 +1,115 @@
+@import '../../style/variables.scss';
+
+.textField {
+	display: flex;
+	flex-direction: column;
+
+	.name {
+		font-family: $--open-sans-font;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 178%;
+		color: $--main-000;
+	}
+	.inputWrapper {
+		margin: 12px 0 8px 0;
+		position: relative;
+
+		.inputText {
+			border: 1px solid $--main-800;
+			border-radius: 8px;
+			padding: 0px 0px 0px 45px;
+			width: 252px;
+			height: 34px;
+			background-color: $--main-900;
+
+			font-family: $--open-sans-font;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 178%;
+			color: $--main-000;
+
+			outline: none;
+
+			&:focus {
+				background-color: $--main-800;
+			}
+		}
+		.inputColorField {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: $--main-000;
+			width: 20px;
+			height: 100%;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}
+		.iconLeft {
+			position: absolute;
+		}
+		.iconRight {
+			position: absolute;
+		}
+	}
+	.hint {
+		font-family: $--open-sans-font;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 133%;
+		color: $--main-000;
+	}
+}
+.textField.default {
+	.inputColorField {
+		background-color: $--main-accent-600;
+	}
+	.inputText:focus {
+		color: $--main-000;
+	}
+}
+.textField.error {
+	.inputColorField {
+		background-color: $--error-red-500;
+	}
+	.inputText {
+		border-color: $--error-red-500;
+		color: $--error-red-500;
+	}
+	.inputText:focus {
+		color: $--main-000;
+	}
+	.hint {
+		color: $--error-red-500;
+	}
+}
+.textField.success {
+	.inputColorField {
+		background-color: $--main-accent-600;
+	}
+	.inputText {
+		border-color: $--main-accent-600;
+		color: $--main-accent-600;
+	}
+	.inputText:focus {
+		color: $--main-000;
+	}
+	.hint {
+		color: $--main-accent-600;
+	}
+}
+.textField.attention {
+	.inputColorField {
+		background-color: $--attention-yellow-300;
+	}
+	.inputText {
+		border-color: $--attention-yellow-300;
+		color: $--attention-yellow-300;
+	}
+	.inputText:focus {
+		color: $--main-000;
+	}
+	.hint {
+		color: $--attention-yellow-300;
+	}
+}

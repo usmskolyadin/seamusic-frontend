@@ -1,0 +1,77 @@
+@import '../../../style/variables.scss';
+
+%baseButtonStyle {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	border-radius: 8px;
+	padding: 4px;
+	border: none;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonPrimary {
+	@extend %baseButtonStyle;
+	background: $--main-accent-700;
+	&:hover {
+		background: $--main-accent-600;
+	}
+	&:active {
+		background: $--main-accent-700;
+	}
+	&:disabled {
+		background-color: $--main-accent-100;
+		svg path {
+			fill: $--main-400;
+		}
+	}
+}
+
+.buttonSecondary {
+	@extend %baseButtonStyle;
+	background-color: $--main-800;
+
+	&:hover {
+		border: 1px solid $--main-accent-800;
+		background: $--main-accent-950;
+	}
+
+	&:active {
+		background: $--main-accent-700;
+	}
+
+	&:disabled {
+		background: $--main-accent-100;
+		svg path {
+			fill: $--main-400;
+		}
+	}
+}
+
+.buttonText {
+	@extend %baseButtonStyle;
+	background: none;
+
+	&:hover {
+		svg path {
+			fill: $--main-accent-600;
+		}
+	}
+
+	&:active {
+		svg path {
+			fill: $--main-accent-900;
+		}
+	}
+
+	&:disabled {
+		svg path {
+			fill: $--main-500;
+		}
+	}
+}

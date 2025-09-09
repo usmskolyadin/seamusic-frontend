@@ -1,0 +1,50 @@
+@import '../../shared/style/variables.scss';
+
+.album {
+	width: 278px;
+	height: 208px;
+	border-radius: 100px 0 0 100px;
+
+	display: flex;
+	gap: 20px;
+	position: relative;
+
+	.photoAlbum {
+		.photo {
+			width: 105px;
+			height: 208px;
+			border-radius: 100px 0 0 100px;
+		}
+	}
+
+	.albumData {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		font-family: $--font-family;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 140%;
+
+		.dataWrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 7px;
+			margin: 20px 0px 38px;
+		}
+
+		.dataKey {
+			color: $--main-550;
+		}
+		.dataValue {
+			color: $--main-white-000;
+		}
+	}
+
+	.likeWrapper {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+}

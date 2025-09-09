@@ -1,0 +1,96 @@
+.mainHeader {
+	height: 156px;
+	position: fixed;
+	top: 0px;
+	padding-left: 308px;
+	z-index: 10;
+	background-color: #0F0F0F;
+	padding-top: 60px;
+
+	.mainHeaderWrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1512px;
+
+		.mainHeaderSearch {
+			position: relative;
+
+			.searchLogo {
+				position: absolute;
+				top: 10px;
+				left: 20px;
+				width: 24px;
+				height: 24px;
+				background: transparent url(../../shared/assets/icons/Search_24.svg)
+					center center no-repeat;
+			}
+			.headerSearch {
+				padding-left: 58px;
+				border-radius: 100px;
+				width: 567px;
+				height: 44px;
+				background: #1F1F1F;
+
+				font-family: var(--font-family);
+				font-weight: 800;
+				font-size: 20px;
+				line-height: 140%;
+				color: #ffffff;
+			}
+		}
+		.mainHeaderNav {
+			display: flex;
+			gap: 30px;
+			align-items: center;
+
+			.navBell {
+				width: 36px;
+				height: 36px;
+				background: transparent url(../../shared/assets/icons/Bell_24.svg)
+					center center no-repeat;
+			}
+			.navAvatar {
+				border-radius: 22px;
+				width: 176px;
+				height: 44px;
+				background: #282828;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 25px;
+				position: relative;
+				padding: 0 25px 0 68px;
+
+				.avatarName {
+					font-family: var(--font-family);
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 140%;
+					color: #fff;
+				}
+				.avatarArrow {
+					width: 16px;
+					height: 14px;
+					background: transparent url(../../shared/assets/icons/Arrow_16.svg)
+						center center no-repeat;
+				}
+				.avatarFoto {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					width: 44px;
+					height: 44px;
+					background: transparent url(../../shared/assets/images/Image-60.png)
+						center center no-repeat;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1866px) {
+		& .mainHeaderWrapper {
+			width: calc(100vw - 355px);
+		}
+	}
+}

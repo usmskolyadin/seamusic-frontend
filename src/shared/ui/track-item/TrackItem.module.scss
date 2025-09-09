@@ -1,0 +1,121 @@
+.trackItemTitle {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 127%;
+	color: #fff;
+	opacity: 0.7;
+	
+	display: flex;
+
+	.number,
+	.like {
+		width: 79px;
+		display: flex;
+		justify-content: center;
+	}
+	.cover,
+	.name,
+	.album,
+	.listens,
+	.playTime {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.cover {
+		width: 230px;
+	}
+	.name {
+		width: 308px;
+	}
+	.album {
+		width: 308px;
+	}
+	.listens {
+		width: 308px;
+	}
+	.playTime {
+		width: 193px;
+	}
+}
+
+.trackItem {
+	display: flex;
+	align-items: center;
+	border: 3px solid #1D1D1D;
+	border-color: #1D1D1D;
+	border-radius: 40px;
+	height: 136px;
+	gap: 20px;
+
+	.number,
+	.like {
+		width: 79px;
+		display: flex;
+		justify-content: center;
+	}
+	.cover,
+	.name,
+	.album,
+	.listens,
+	.playTime {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.number {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 112%;
+		color: #fff;
+	}
+	.cover {
+		width: 230px;
+
+		.coverImg {
+			border-radius: 20px;
+			width: 97px;
+			height: 97px;
+		}
+	}
+	.name {
+		width: 308px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		.title {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 140%;
+			color: #fff;
+		}
+		.author {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 140%;
+			color: #545454;
+		}
+	}
+	.album {
+		width: 308px;
+	}
+	.listens {
+		width: 308px;
+	}
+	.playTime {
+		width: 193px;
+	}
+	.album,
+	.listens,
+	.playTime {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 140%;
+		color: #fff;
+	}
+}
