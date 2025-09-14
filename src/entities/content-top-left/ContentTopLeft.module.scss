@@ -1,56 +1,65 @@
 .contentTopLeft {
-	border-radius: 40px;
-	background: #1F1F1F;
-	width: 60%;
-	padding: 30px;
+  border-radius: 40px;
 
-	display: flex;
-	flex-direction: row; 
-	justify-content: space-between;
-	gap: 60px;
-	flex-wrap: nowrap; 
+  background: rgba(0, 0, 0, 0); // полупрозрачный
+  backdrop-filter: blur(20px);       // сильный блюр
+  -webkit-backdrop-filter: blur(20px); // Safari
+  border: 3px solid rgba(255, 255, 255, 0.1); // чуть прозрачная рамка
+  border-radius: 40px;
 
-	.blockText {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		gap: 40px;
+  width: 60%;
+  padding: 30px;
 
-		.blockTitle {
-			display: flex;
-			flex-direction: column;
-			gap: 7px;
+  /* поверх всего */
+  position: relative;
 
-			.title {
-				font-family: var(--font-family);
-				font-weight: 600;
-				font-size: 32px;
-				line-height: 131%;
-				color: #fff;
-			}
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: nowrap; 
 
-			.desription {
-				font-family: var(--font-family);
-				font-weight: 400;
-				font-size: 20px;
-				line-height: 140%;
-				color: #9D9D9D;
-			}
-		}
+  .blockText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
 
-		.blockTags {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 10px;
-			color: #9D9D9D;
-		}
-	}
+    .blockTitle {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
 
-	.blockImages {
-		display: flex;
-		gap: 30px;
-		justify-content: flex-start;
-		align-items: flex-end;
-	}
+      .title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 131%;
+        color: #fff;
+      }
+
+      .desription {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #9D9D9D;
+      }
+    }
+
+    .blockTags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: #9D9D9D;
+    }
+  }
+
+  .blockImages {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
 }

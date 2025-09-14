@@ -1,96 +1,142 @@
 .mainHeader {
-	height: 156px;
-	position: fixed;
-	top: 0px;
-	padding-left: 308px;
-	z-index: 10;
-	background-color: #0F0F0F;
-	padding-top: 60px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; // выше частиц
+  padding: 25px;
+  box-sizing: border-box;
 
-	.mainHeaderWrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 1512px;
+  background: rgba(0, 0, 0, 0);       // полупрозрачный
+  backdrop-filter: blur(20px);             // сильный блюр
+  -webkit-backdrop-filter: blur(20px);    // для Safari
+	border-bottom: 3px solid rgba(255, 255, 255, 0.1); // чуть прозрачная рамка
 
-		.mainHeaderSearch {
-			position: relative;
+  .mainHeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1820px;
+    margin: 0 auto;
+    gap: 20px;
+  }
 
-			.searchLogo {
-				position: absolute;
-				top: 10px;
-				left: 20px;
-				width: 24px;
-				height: 24px;
-				background: transparent url(../../shared/assets/icons/Search_24.svg)
-					center center no-repeat;
-			}
-			.headerSearch {
-				padding-left: 58px;
-				border-radius: 100px;
-				width: 567px;
-				height: 44px;
-				background: #1F1F1F;
+  .mainHeaderSearch {
+    position: relative;
+    flex: 1;
+    max-width: 500px;
 
-				font-family: var(--font-family);
-				font-weight: 800;
-				font-size: 20px;
-				line-height: 140%;
-				color: #ffffff;
-			}
-		}
-		.mainHeaderNav {
-			display: flex;
-			gap: 30px;
-			align-items: center;
 
-			.navBell {
-				width: 36px;
-				height: 36px;
-				background: transparent url(../../shared/assets/icons/Bell_24.svg)
-					center center no-repeat;
-			}
-			.navAvatar {
-				border-radius: 22px;
-				width: 176px;
-				height: 44px;
-				background: #282828;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				gap: 25px;
-				position: relative;
-				padding: 0 25px 0 68px;
+    .searchLogo {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+      background: transparent url(../../shared/assets/icons/Search_24.svg) center center no-repeat;
+      background-size: contain;
+    }
 
-				.avatarName {
-					font-family: var(--font-family);
-					font-weight: 600;
-					font-size: 20px;
-					line-height: 140%;
-					color: #fff;
-				}
-				.avatarArrow {
-					width: 16px;
-					height: 14px;
-					background: transparent url(../../shared/assets/icons/Arrow_16.svg)
-						center center no-repeat;
-				}
-				.avatarFoto {
-					position: absolute;
-					top: 0px;
-					left: 0px;
-					width: 44px;
-					height: 44px;
-					background: transparent url(../../shared/assets/images/Image-60.png)
-						center center no-repeat;
-				}
-			}
-		}
-	}
+    .headerSearch {
+      width: 100%;
+      padding-left: 48px;
+      border-radius: 100px;
+      height: 40px;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 16px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+	    border: 3px solid rgba(255, 255, 255, 0.1); 
+      
+    }
+  }
 
-	@media (max-width: 1866px) {
-		& .mainHeaderWrapper {
-			width: calc(100vw - 355px);
-		}
-	}
+  .mainHeaderNav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .navBell {
+      width: 28px;
+      height: 28px;
+      background: transparent url(../../shared/assets/icons/Bell_24.svg) center center no-repeat;
+      background-size: contain;
+    }
+
+    .navAvatar {
+      border-radius: 22px;
+      height: 40px;
+      background: #282828;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      padding: 0 15px 0 48px;
+
+      .avatarName {
+        font-size: 14px;
+        color: #fff;
+      }
+      .avatarArrow {
+        width: 12px;
+        height: 12px;
+        background: transparent url(../../shared/assets/icons/Arrow_16.svg) center center no-repeat;
+        background-size: contain;
+      }
+      .avatarFoto {
+        width: 40px;
+        height: 40px;
+        left: 0;
+        position: absolute;
+        background: transparent url(../../shared/assets/images/Image-60.png) center center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  /* планшеты */
+  @media (max-width: 1024px) {
+    height: 80px;
+    padding: 15px;
+
+    .mainHeaderWrapper {
+      gap: 10px;
+    }
+
+    .mainHeaderSearch {
+      max-width: 300px;
+    }
+  }
+
+  /* телефоны */
+  @media (max-width: 768px) {
+    height: 60px;
+    padding: 10px 15px;
+
+    .mainHeaderWrapper {
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .mainHeaderSearch {
+      display: none; // скрываем поиск на телефоне
+    }
+
+    .navAvatar {
+      width: 40px;
+      min-width: 40px;
+      padding: 0;
+      background: none;
+
+      .avatarName,
+      .avatarArrow {
+        display: none;
+      }
+    }
+  }
 }

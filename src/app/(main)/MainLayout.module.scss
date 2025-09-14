@@ -1,36 +1,50 @@
 .main {
-	margin: 0 auto;
-	max-width: 1820px;
-	padding: 156px 0px 160px;
+  margin: 0 auto;
+  max-width: 1820px;
+  padding: 156px 20px 160px; // по бокам даём 20px чтобы не прилипало к краям
+  box-sizing: border-box;
 
-	.content {
-		padding-left: 308px;
-		width: 100%;
-		display: flex;
+  .content {
+    padding-left: 308px; // отступ под сайдбар (только для десктопа)
+    width: 100%;
+    display: flex;
 
-		.mainContent {
-			width: 100%;
+    .mainContent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
 
-			display: flex;
-			flex-direction: column;
-			gap: 50px;
-		}
-	}
+/* планшеты и телефоны */
+@media (max-width: 1024px) {
+  .main {
+    padding: 120px 20px 120px; // уменьшаем верх/низ
+    max-width: 100%;
+
+    .content {
+      padding-left: 240px; // если сайдбар уже меньше
+    }
+  }
 }
 
 @media (max-width: 768px) {
-	.main {
-		padding: 100px 20px 200px;
-		box-sizing: border-box;
-		max-width: 100%; 
+  .main {
+    padding: 100px 16px 100px; // сверху норм отступ, по бокам безопасные 16px
+    max-width: 100%;
+    box-sizing: border-box;
 
-		.content {
-			padding-left: 0; 
-			width: 100%; 
-		}
+    .content {
+      padding-left: 0; // убираем под меню, меню скрывается
+      flex-direction: column; // если нужно в столбик
+      width: 100%;
+    }
 
-		.mainContent {
-			width: 100%;
-		}
-	}
+    .mainContent {
+      width: 100%;
+      gap: 30px; // на мобилке поменьше расстояние
+    }
+  }
 }

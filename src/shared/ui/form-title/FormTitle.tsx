@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import s from './FormTitle.module.scss';
 
 export type FormTitleType = {
@@ -13,7 +14,9 @@ export const FormTitle = ({ data }: FormTitleProps) => {
 	return (
 		<div className={s.formTitle}>
 			<div className={s.titleLeft}>{data.left}</div>
-			<div className={s.titleRight}>{data.right}</div>
+			<Link href={"/"}>
+				<div className={s.titleRight}>{data.right}</div>
+			</Link>
 		</div>
 	);
 };

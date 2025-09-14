@@ -7,6 +7,7 @@ import ImportedIconGoogle from '@/shared/assets/icons/SocialMediaLogoGoogle.svg'
 import ImportedIconSpotify from '@/shared/assets/icons/SocialMediaLogoSpotify.svg';
 import { LoginFormTitleData, TEXT } from '@/shared/constants/constants';
 import { GradientButton } from '@/shared/ui/buttons';
+import { OAuthLoginInput } from '@/shared/ui/oauth-login-input/oauth-login-input';
 
 const IconGoogle: React.FC<React.SVGProps<SVGSVGElement>> = ImportedIconGoogle;
 const IconSpotify: React.FC<React.SVGProps<SVGSVGElement>> =
@@ -17,11 +18,13 @@ export const LoginForm = () => {
 		<>
 			<FormTitle data={LoginFormTitleData} />
 			<div className={s.loginBlock}>
-				<InputLogin
+				<OAuthLoginInput
+					icon={IconGoogle}
 					type={'text'}
 					placeholder={TEXT.LogInGooglePlaceholder}
 				/>
-				<InputLogin
+				<OAuthLoginInput
+					icon={IconSpotify}
 					type={'text'}
 					placeholder={TEXT.LogInSpotifyPlaceholder}
 				/>

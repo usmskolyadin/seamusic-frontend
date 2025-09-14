@@ -11,7 +11,6 @@ const MainLayout = ({
 }>) => {
 	return (
 		<div className={s.main}>
-			<MainLogo />
 			<MainHeader />
 			<MainMenu />
 			<div className={s.content}>

@@ -1,57 +1,62 @@
 .mainMenu {
-	padding: 35px 34px;
-	border-radius: 40px;
-	height: calc(100vh - 176px);
-	min-height: 740px;
-	background: #1F1F1F;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  padding: 35px 34px;
+  border-radius: 40px;
+  height: calc(100vh - 176px);
+  min-height: 740px;
 
-	position: fixed;
-	top: 156px;
-	z-index: 12;
+  background: rgba(0, 0, 0, 0);        // полупрозрачный фон
+  backdrop-filter: blur(20px);               // сильный блюр
+  -webkit-backdrop-filter: blur(20px);      // для Safari
+  border: 3px solid rgba(255, 255, 255, 0.1); // чуть прозрачная рамка
 
-	.menuNav {
-		display: flex;
-		flex-direction: column;
-		gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-		.navImage {
-			position: relative;
+  position: fixed;
+  top: 156px;
+  z-index: 100; // выше частиц и контента
 
-			.imgTop {
-				border-radius: 30px;
-				width: 210px;
-				height: 210px;
-			}
-			.navTitleWrapper {
-				position: absolute;
-				bottom: 20px;
-				width: 210px;
-				display: flex;
-				justify-content: center;
+  .menuNav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 
-				.navTitle {
-					font-family: var(--font-family);
-					font-weight: 800;
-					font-size: 20px;
-					line-height: 130%;
-					color: #fff;
-				}
-			}
-		}
-	}
+    .navImage {
+      position: relative;
 
-	.navItems {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-	}
+      .imgTop {
+        border-radius: 30px;
+        width: 210px;
+        height: 210px;
+      }
+      .navTitleWrapper {
+        position: absolute;
+        bottom: 20px;
+        width: 210px;
+        display: flex;
+        justify-content: center;
+
+        .navTitle {
+          font-family: var(--font-family);
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 130%;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .navItems {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 @media (max-width: 768px) {
-	.mainMenu {
-		display: none;
-	}
+  .mainMenu {
+    display: none;
+  }
 }

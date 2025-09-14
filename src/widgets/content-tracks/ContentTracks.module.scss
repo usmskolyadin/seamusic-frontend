@@ -9,8 +9,23 @@
 		gap: 20px;
 
 		.contentItems {
-			display: flex;
-			flex-direction: column;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr); // две колонки
+			gap: 20px;
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		gap: 20px;
+
+		.contentMain {
+			gap: 15px;
+
+			.contentItems {
+				grid-template-columns: 1fr; // одна колонка на телефоне
+				gap: 10px;
+			}
 		}
 	}
 }

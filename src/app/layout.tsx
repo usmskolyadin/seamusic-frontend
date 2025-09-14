@@ -1,5 +1,6 @@
 'use client';
 
+import { Particles } from '@/shared/ui/particles/Particles';
 import './globals.css';
 
 
@@ -10,7 +11,10 @@ const RootLayout = ({
 }>) => {
 	return (
 		<html lang="ru">
-			<body >{children}</body>
+			<body >
+			  <Particles />
+				{children}
+			</body>
 		</html>
 	);
 };

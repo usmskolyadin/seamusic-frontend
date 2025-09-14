@@ -4,18 +4,24 @@
 	position: fixed;
 	bottom: 20px;
 	padding-left: 308px;
-	z-index: 10;
+	z-index: 15;
 
 	.audioPlayer {
 		width: 1512px;
 		border-radius: 55px;
-		background: #1F1F1F;
 		padding: 15px;
 
 		position: relative;
 
 		display: flex;
 		justify-content: space-between;
+
+		/* 🎨 Стеклянный эффект */
+		background: rgba(0, 0, 0, 0);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+	    border: 3px solid rgba(255, 255, 255, 0.1); 
+
 
 		.left {
 			display: flex;
@@ -60,7 +66,7 @@
 			.time {
 				font-family: $--font-family;
 				font-weight: 700;
-				font-size: 20px;
+				font-size: 15px;
 				line-height: 140%;
 				color: $--main-white-000;
 			}

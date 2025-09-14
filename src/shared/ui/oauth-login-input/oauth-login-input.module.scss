@@ -1,0 +1,67 @@
+@import '../../style/variables.scss';
+
+.loginInput {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	.formInput {
+		border: 1px solid #fff;
+		border-radius: 40px;
+		height: 64px;
+		width: 100%;
+		background: transparent;
+
+		text-align: center;
+
+		font-family: $--font-family;
+		font-weight: 400;
+		font-size: 22px;
+		color: #fff;
+	}
+
+	.inputHeader,
+	.inputFooter,
+	.inputFooterText,
+	.inputFooterLink {
+		display: flex;
+		font-family: $--font-family;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 133%;
+		color: #fff;
+		margin-top: 8px;
+
+		.linkUnderline {
+			font-family: $--font-family;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 133%;
+			text-decoration: underline;
+			text-decoration-skip-ink: none;
+			color: $--main-white-000;
+		}
+	}
+	.inputHeader {
+		justify-content: flex-start;
+		margin-bottom: 5px;
+	}
+	.inputFooterLink {
+		justify-content: flex-end;
+	}
+	.inputFooterText {
+		justify-content: flex-start;
+
+		font-family: $--font-family;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 137%;
+		color: #747474;
+	}
+
+	.imgLogoInput {
+		position: absolute;
+		top: 22px;
+		left: 25%;
+	}
+}

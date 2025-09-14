@@ -9,7 +9,7 @@ export const MainLogo = () => {
 			<div className={s.logoImageWrapper}>
 				<Image src={navImgSrc} alt="Logo" fill className={s.mainLogoImage} />
 			</div>
-			<span className={s.logoText}>{TEXT.LogoTitle}</span>
+			<span className={s.logoTextWrapper}>{TEXT.LogoTitle}</span>
 		</div>
 	);
 };

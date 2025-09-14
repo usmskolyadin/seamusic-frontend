@@ -12,9 +12,33 @@
 		width: 100%;
 		max-width: 870px;
 		min-height: 870px;
-		backdrop-filter: blur(4px);
-		background: rgba(132, 132, 132, 0.3);
+
+		/* 🌌 Стеклянный эффект */
+		background: rgba(0, 0, 0, 0);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+
+		/* ✨ Лёгкое свечение */
+		border: 2px solid rgba(255, 255, 255, 0.4);
+
 
 		padding: 60px;
+	}
+
+	/* адаптив */
+	@media (max-width: 768px) {
+		flex-direction: column; /* ставим в столбик */
+		gap: 40px; /* уменьшаем расстояние между блоками */
+		align-items: center; /* центрируем по горизонтали */
+		
+		.auth {
+			margin: 5px;
+		}
+
+		.form {
+			min-height: auto; /* убираем фиксированную высоту */
+			padding: 30px 20px; /* меньше паддинги */
+			border-radius: 30px;
+		}
 	}
 }

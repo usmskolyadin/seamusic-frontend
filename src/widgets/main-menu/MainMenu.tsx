@@ -94,7 +94,7 @@ export const MainMenu = () => {
 						className={s.imgTop}
 					/>
 					<div className={s.navTitleWrapper}>
-						<div className={s.navTitle}>Top release</div>
+						<div className={s.navTitle}>NEW ALBUM</div>
 					</div>
 				</div>
 				<div className={s.navItems}>
